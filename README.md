@@ -25,6 +25,13 @@ brew install cmake assimp glm glfw freetype
 cmake -S . -B build
 cmake --build build -j$(sysctl -n hw.logicalcpu)
 ```
+```
+brew install cmake assimp glm glfw freetype
+mkdir build
+cd build
+cmake ../.
+make -j8
+```
 ## Create Xcode project on Mac platform
 Thanks [@caochao](https://github.com/caochao):
 After cloning the repo, go to the root path of the repo, and run the command below:
